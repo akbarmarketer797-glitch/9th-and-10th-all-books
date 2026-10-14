@@ -1,0 +1,2790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>9th & 10th Class All Books 2026/2027</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+
+/* =========================
+   BLUE HEADER
+========================= */
+
+.blue-box {
+    width: 100%;
+    min-height: 290px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0066ff,
+            #00bfff
+        );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 15px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* TITLE */
+
+.blue-box h1 {
+    color: white;
+    font-size: 42px;
+
+    margin: 0 0 25px 0;
+
+    text-align: center;
+
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+/* SEARCH */
+
+.search {
+    width: 400px;
+    max-width: 90%;
+
+    height: 50px;
+
+    padding: 5px 20px;
+
+    border: none;
+    border-radius: 25px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   CLASS BUTTONS
+========================= */
+
+.class-buttons {
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 30px auto 20px;
+}
+
+.class-button {
+    border: none;
+
+    padding: 12px 30px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    color: #0066ff;
+
+    border: 2px solid #0066ff;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.class-button:hover {
+    background: #0066ff;
+    color: white;
+}
+
+.class-button.active {
+    background: #0066ff;
+    color: white;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.section-title h2 {
+    margin: 0;
+
+    font-size: 28px;
+
+    color: #222;
+}
+
+.section-title p {
+    color: #777;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   BOOK CONTAINER
+========================= */
+
+.books-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding-bottom: 50px;
+}
+
+
+/* =========================
+   BOOK GRID
+========================= */
+
+.books-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================
+   BOOK CARD
+========================= */
+
+.book-card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.10);
+
+    transition: 0.25s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+
+/* BOOK COLOR HEADER */
+
+.book-icon {
+    height: 125px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0066ff,
+            #00bfff
+        );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+
+/* BOOK INFORMATION */
+
+.book-info {
+    padding: 18px;
+
+    text-align: center;
+}
+
+.book-info h3 {
+    margin: 0 0 8px;
+
+    font-size: 18px;
+}
+
+.book-info p {
+    margin: 0 0 15px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* OPEN BUTTON */
+
+.open-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #0066ff;
+
+    color: white;
+
+    padding: 9px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.open-button:hover {
+    background: #004dcc;
+}
+
+
+/* =========================
+   10TH CLASS
+========================= */
+
+#class10 {
+    display: none;
+}
+
+
+/* =========================
+   NO RESULT
+========================= */
+
+.no-result {
+    display: none;
+
+    text-align: center;
+
+    padding: 40px;
+
+    color: #777;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background:
+        linear-gradient(
+            135deg,
+            #0066ff,
+            #00bfff
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+
+
+/* =========================
+   CHAPTER TEST SYSTEM
+========================= */
+
+.test-nav {
+    text-align: center;
+    margin: 5px auto 25px;
+}
+
+.test-nav-button {
+    border: none;
+    padding: 13px 26px;
+    border-radius: 25px;
+    background: #111827;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.test-nav-button:hover {
+    background: #0066ff;
+}
+
+#chapterTests {
+    display: none;
+    width: 92%;
+    max-width: 1150px;
+    margin: 20px auto 50px;
+}
+
+.test-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.test-title h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.test-title p {
+    color: #777;
+}
+
+.test-class-tabs,
+.test-subject-tabs,
+.test-chapter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    margin: 12px 0;
+}
+
+.test-tab {
+    border: 2px solid #0066ff;
+    background: white;
+    color: #0066ff;
+    border-radius: 20px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.test-tab.active,
+.test-tab:hover {
+    background: #0066ff;
+    color: white;
+}
+
+.test-panel {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.10);
+}
+
+.test-breadcrumb {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.test-progress {
+    font-weight: bold;
+    color: #0066ff;
+    margin-bottom: 12px;
+}
+
+.test-question {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.test-options {
+    display: grid;
+    gap: 11px;
+}
+
+.test-option {
+    border: 2px solid #ddd;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 13px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.test-option:hover:not(:disabled) {
+    border-color: #0066ff;
+    background: #eef6ff;
+}
+
+.test-option.correct {
+    border-color: #159447;
+    background: #eaf8ef;
+}
+
+.test-option.wrong {
+    border-color: #c62828;
+    background: #fff0f0;
+}
+
+.test-option:disabled {
+    cursor: default;
+}
+
+.test-feedback {
+    min-height: 28px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.test-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.test-score-live {
+    font-weight: bold;
+}
+
+.test-next,
+.test-start,
+.test-restart {
+    border: none;
+    background: #0066ff;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.test-next:hover,
+.test-start:hover,
+.test-restart:hover {
+    background: #004dcc;
+}
+
+.test-result {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.test-result h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.test-marks {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.test-percentage {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.test-note {
+    color: #777;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    #chapterTests {
+        width: 95%;
+    }
+
+    .test-panel {
+        padding: 17px;
+    }
+
+    .test-question {
+        font-size: 18px;
+    }
+
+    .test-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .test-next,
+    .test-start,
+    .test-restart {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SHORT QUESTIONS
+========================= */
+
+.short-nav {
+    text-align: center;
+    margin: 8px auto 25px;
+}
+
+.short-nav-button {
+    border: none;
+    padding: 13px 26px;
+    border-radius: 25px;
+    background: #0f766e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.short-nav-button:hover {
+    background: #115e59;
+}
+
+#shortQuestions {
+    display: none;
+    width: 92%;
+    max-width: 1150px;
+    margin: 20px auto 50px;
+}
+
+.short-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.short-title h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.short-title p {
+    color: #777;
+}
+
+.short-class-tabs,
+.short-subject-tabs,
+.short-chapter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    margin: 12px 0;
+}
+
+.short-panel {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.10);
+}
+
+.short-breadcrumb {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.short-list {
+    display: grid;
+    gap: 14px;
+}
+
+.short-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    background: #fafafa;
+}
+
+.short-question {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.short-answer {
+    display: none;
+    padding: 10px 12px;
+    margin-top: 8px;
+    border-left: 4px solid #0f766e;
+    background: #eefaf8;
+    border-radius: 6px;
+    line-height: 1.5;
+}
+
+.short-answer.show {
+    display: block;
+}
+
+.show-answer {
+    border: none;
+    background: #0f766e;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.show-answer:hover {
+    background: #115e59;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .books-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .blue-box {
+        min-height: 250px;
+    }
+
+    .blue-box h1 {
+        font-size: 28px;
+    }
+
+    .search {
+        width: 90%;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .class-buttons {
+        flex-direction: column;
+
+        width: 80%;
+    }
+
+    .class-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================
+   FLOATING BACK TO HOME BUTTON
+   TOUCH + MOUSE DRAG SUPPORT
+========================= */
+
+.back-home-wrap {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    margin: 0;
+    z-index: 99999;
+    animation: backHomeSlide 0.55s ease-out;
+
+    /* Allow touch and mouse dragging */
+    touch-action: none;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.back-home-wrap.dragging {
+    cursor: grabbing;
+    animation: none;
+    transition: none;
+}
+
+.back-home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: 2px solid rgba(255,255,255,0.65);
+    text-decoration: none;
+    background: linear-gradient(135deg, #0066ff, #00bfff);
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 28px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: inherit;
+    box-shadow: 0 6px 20px rgba(0, 102, 255, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    white-space: nowrap;
+}
+
+.back-home-button:hover {
+    box-shadow: 0 9px 25px rgba(0, 102, 255, 0.50);
+}
+
+.back-home-button:active {
+    transform: scale(0.96);
+}
+
+@keyframes backHomeSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .back-home-wrap {
+        top: 10px;
+        left: 10px;
+    }
+
+    .back-home-button {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     BLUE HEADER
+========================= -->
+
+<div class="blue-box">
+
+    <h1>
+        9th & 10th Class All Books 2026/2027
+    </h1>
+
+    <input
+        class="search"
+        type="text"
+        id="search"
+        placeholder="Search Books..."
+    >
+
+</div>
+
+
+
+<!-- =========================
+     CLASS SELECTOR
+========================= -->
+
+<div class="class-buttons">
+
+    <button
+        class="class-button active"
+        onclick="showClass(9)"
+        id="btn9"
+    >
+        9th Class
+    </button>
+
+
+    <button
+        class="class-button"
+        onclick="showClass(10)"
+        id="btn10"
+    >
+        10th Class
+    </button>
+
+</div>
+
+<!-- =========================
+     CHAPTER TEST NAVIGATION
+========================= -->
+<div class="test-nav">
+    <button class="test-nav-button" onclick="openChapterTests()">
+        📝 Chapter Tests — 20 MCQs
+    </button>
+</div>
+
+<div class="short-nav">
+    <button class="short-nav-button" onclick="openShortQuestions()">
+        📚 Important Short Questions — 10 Per Chapter
+    </button>
+</div>
+
+<!-- =========================
+     9TH CLASS
+========================= -->
+
+<div id="class9">
+
+    <div class="section-title">
+
+        <h2>
+            9th Class Books
+        </h2>
+
+        <p>
+            All 9th class books for 2026/2027
+        </p>
+
+    </div>
+
+
+    <div class="books-container">
+
+        <div class="books-grid">
+
+
+            <!-- PHYSICS -->
+
+            <div class="book-card" data-search="physics">
+
+                <div class="book-icon">
+                    PHY
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Physics</h3>
+
+                    <p>9th Class Physics</p>
+
+                    <a href="Physics .html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHYSICS URDU -->
+
+            <div class="book-card" data-search="physics urdu">
+
+                <div class="book-icon">
+                    PHY
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Physics Urdu</h3>
+
+                    <p>9th Class Physics Urdu</p>
+
+                    <a href="physics urdu.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CHEMISTRY -->
+
+            <div class="book-card" data-search="chemistry">
+
+                <div class="book-icon">
+                    CHEM
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Chemistry</h3>
+
+                    <p>9th Class Chemistry</p>
+
+                    <a href="Chemistry .html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CHEMISTRY URDU -->
+
+            <div class="book-card" data-search="chemistry urdu">
+
+                <div class="book-icon">
+                    CHEM
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Chemistry Urdu</h3>
+
+                    <p>9th Class Chemistry Urdu</p>
+
+                    <a href="chemistry ur.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BIOLOGY -->
+
+            <div class="book-card" data-search="biology">
+
+                <div class="book-icon">
+                    BIO
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Biology</h3>
+
+                    <p>9th Class Biology</p>
+
+                    <a href="Bio.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BIOLOGY URDU -->
+
+            <div class="book-card" data-search="biology urdu">
+
+                <div class="book-icon">
+                    BIO
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Biology Urdu</h3>
+
+                    <p>9th Class Biology Urdu</p>
+
+                    <a href="Bio ur.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MATH -->
+
+            <div class="book-card" data-search="math mathematics">
+
+                <div class="book-icon">
+                    Math
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Mathematics</h3>
+
+                    <p>9th Class Mathematics</p>
+
+                    <a href="Math Book.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- MATH (UR) -->
+
+            <div class="book-card" data-search="math mathematics">
+
+                <div class="book-icon">
+                    Math (UR)
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Mathematics Urdu</h3>
+
+                    <p>9th Class Mathematics Urdu</p>
+
+                    <a href="math ur.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+            
+            <!-- ENGLISH -->
+
+            <div class="book-card" data-search="english">
+
+                <div class="book-icon">
+                    ENG
+                </div>
+
+                <div class="book-info">
+
+                    <h3>English</h3>
+
+                    <p>9th Class English</p>
+
+                    <a href="English.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- URDU -->
+
+            <div class="book-card" data-search="urdu">
+
+                <div class="book-icon">
+                    اردو
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Urdu</h3>
+
+                    <p>9th Class Urdu</p>
+
+                    <a href="urdu.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COMPUTER -->
+
+            <div class="book-card" data-search="computer computer science">
+
+                <div class="book-icon">
+                    CS
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Computer</h3>
+
+                    <p>9th Class Computer</p>
+
+                    <a href="comp.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COMPUTER URDU -->
+
+            <div class="book-card"
+                 data-search="computer urdu computer science urdu">
+
+                <div class="book-icon">
+                    CS
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Computer Urdu</h3>
+
+                    <p>9th Class Computer Urdu</p>
+
+                    <a href="comp.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ISLAMIYAT -->
+
+            <div class="book-card"
+                 data-search="islamiyat islamiat">
+
+                <div class="book-icon">
+                    ☪
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Islamiyat</h3>
+
+                    <p>9th Class Islamiyat</p>
+
+                    <a href="islam.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Nazra -->
+
+
+            <div class="book-card"
+                 data-search="Nazra ">
+
+                <div class="book-icon">
+                    ☪
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Nazra</h3>
+
+                    <p>9th Class Nazra Book</p>
+
+                    <a href="nazra.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>    
+
+
+
+<!-- =========================
+     10TH CLASS
+========================= -->
+
+<div id="class10">
+
+    <div class="section-title">
+
+        <h2>
+            10th Class Books
+        </h2>
+
+        <p>
+            All 10th class books for 2026/2027
+        </p>
+
+    </div>
+
+
+    <div class="books-container">
+
+        <div class="books-grid">
+
+
+            <!-- 10 PHYSICS -->
+
+            <div class="book-card" data-search="physics">
+
+                <div class="book-icon">
+                    PHY
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Physics</h3>
+
+                    <p>10th Class Physics</p>
+
+                    <a href="10th physics book .html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 PHYSICS URDU -->
+
+            <div class="book-card" data-search="physics urdu">
+
+                <div class="book-icon">
+                    PHY
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Physics Urdu</h3>
+
+                    <p>10th Class Physics Urdu</p>
+
+                    <a href="10th physics urdu.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 CHEMISTRY -->
+
+            <div class="book-card" data-search="chemistry">
+
+                <div class="book-icon">
+                    CHEM
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Chemistry</h3>
+
+                    <p>10th Class Chemistry</p>
+
+                    <a href="10th chemistry.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 CHEMISTRY URDU -->
+
+            <div class="book-card" data-search="chemistry urdu">
+
+                <div class="book-icon">
+                    CHEM
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Chemistry Urdu</h3>
+
+                    <p>10th Class Chemistry Urdu</p>
+
+                    <a href="10th chemistry urdu.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 BIOLOGY -->
+
+            <div class="book-card" data-search="biology">
+
+                <div class="book-icon">
+                    BIO
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Biology</h3>
+
+                    <p>10th Class Biology</p>
+
+                    <a href="10th biology.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 BIOLOGY URDU -->
+
+            <div class="book-card" data-search="biology urdu">
+
+                <div class="book-icon">
+                    BIO
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Biology Urdu</h3>
+
+                    <p>10th Class Biology Urdu</p>
+
+                    <a href="10th biology urdu.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 MATH -->
+
+            <div class="book-card" data-search="math mathematics">
+
+                <div class="book-icon">
+                    ∑
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Mathematics</h3>
+
+                    <p>10th Class Mathematics</p>
+
+                    <a href="10th math.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 10 MATH (UR) -->
+
+            <div class="book-card" data-search="math mathematics">
+
+                <div class="book-icon">
+                    ∑ (UR)
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Mathematics Urdu</h3>
+
+                    <p>10th Class Mathematics Urdu</p>
+
+                    <a href="10th math.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 10 ENGLISH -->
+
+            <div class="book-card" data-search="english">
+
+                <div class="book-icon">
+                    ENG
+                </div>
+
+                <div class="book-info">
+
+                    <h3>English</h3>
+
+                    <p>10th Class English</p>
+
+                    <a href="10th english.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 URDU -->
+
+            <div class="book-card" data-search="urdu">
+
+                <div class="book-icon">
+                    اردو
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Urdu</h3>
+
+                    <p>10th Class Urdu</p>
+
+                    <a href="10th urdu.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 COMPUTER -->
+
+            <div class="book-card"
+                 data-search="computer computer science">
+
+                <div class="book-icon">
+                    CS
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Computer</h3>
+
+                    <p>10th Class Computer</p>
+
+                    <a href="10th computer.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 10 COMPUTER URDU -->
+
+            <div class="book-card"
+                 data-search="computer urdu computer science urdu">
+
+                <div class="book-icon">
+                    CS
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Computer Urdu</h3>
+
+                    <p>10th Class Computer Urdu</p>
+
+                    <a href="10th computer urdu.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PAKISTAN STUDIES -->
+
+            <div class="book-card"
+                 data-search="pakistan studies pak studies">
+
+                <div class="book-icon">
+                    PAK
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Pakistan Studies</h3>
+
+                    <p>10th Class Pakistan Studies</p>
+
+                    <a href="pakistan studies.html" class="open-button">
+                        Open Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- =========================
+     CHAPTER TESTS
+========================= -->
+<section id="chapterTests">
+    <div class="test-title">
+        <h2>📝 Chapter Tests</h2>
+        <p>Choose a class, subject and chapter. Each chapter test contains 20 important MCQs.</p>
+    </div>
+
+    <div class="back-home-wrap">
+        <button class="back-home-button" onclick="backToHome()">← Back to Home</button>
+    </div>
+
+    <div class="test-class-tabs" id="testClassTabs"></div>
+    <div class="test-subject-tabs" id="testSubjectTabs"></div>
+    <div class="test-chapter-tabs" id="testChapterTabs"></div>
+
+    <div class="test-panel" id="testPanel">
+        <div class="test-breadcrumb" id="testBreadcrumb"></div>
+        <div class="test-progress" id="testProgress"></div>
+        <div class="test-question" id="testQuestion"></div>
+        <div class="test-options" id="testOptions"></div>
+        <div class="test-feedback" id="testFeedback"></div>
+
+        <div class="test-controls">
+            <div class="test-score-live" id="testScoreLive">Marks: 0 / 20</div>
+            <button class="test-next" id="testNext" onclick="nextTestQuestion()">
+                Next Question →
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     SHORT QUESTIONS
+========================= -->
+<section id="shortQuestions">
+    <div class="short-title">
+        <h2>📚 Chapter Short Questions</h2>
+        <p>Choose a class, subject and chapter. Each chapter has 10 important short questions.</p>
+    </div>
+
+    <div class="back-home-wrap">
+        <button class="back-home-button" onclick="backToHome()">← Back to Home</button>
+    </div>
+
+    <div class="short-class-tabs" id="shortClassTabs"></div>
+    <div class="short-subject-tabs" id="shortSubjectTabs"></div>
+    <div class="short-chapter-tabs" id="shortChapterTabs"></div>
+
+    <div class="short-panel">
+        <div class="short-breadcrumb" id="shortBreadcrumb"></div>
+        <div class="short-list" id="shortList"></div>
+    </div>
+</section>
+
+<!-- =========================
+     NO RESULT
+========================= -->
+
+
+
+<div id="noResult" class="no-result">
+
+    <div class="no-result-card">
+
+        <div class="no-result-icon">
+            <span>⌕</span>
+        </div>
+
+        <div class="no-result-label">SEARCH RESULTS</div>
+
+        <h2>No Books Found</h2>
+
+        <p class="no-result-message">
+            Sorry! We couldn't find any books matching your search.
+        </p>
+
+        <div class="searched-text">
+            Your search: <strong id="searchedText">Nothing searched yet</strong>
+        </div>
+
+        <p class="no-result-hint">
+            Please check the spelling or try another book name.
+        </p>
+
+        <button class="no-result-button" onclick="clearBookSearch()">
+            <span>↻</span> Show All Books
+        </button>
+
+        <div class="no-result-footer">
+            9th &amp; 10th Class Books · 2026/2027
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<div class="footer">
+
+    <p>
+        © 2026 9th & 10th Class Books
+    </p>
+
+</div>
+
+
+
+<script>
+
+/* =========================
+   CURRENT CLASS
+========================= */
+
+let currentClass = 9;
+
+
+/* =========================
+   CLASS SWITCH
+========================= */
+
+function showClass(classNumber) {
+
+    const class9 =
+        document.getElementById("class9");
+
+    const class10 =
+        document.getElementById("class10");
+
+    const btn9 =
+        document.getElementById("btn9");
+
+    const btn10 =
+        document.getElementById("btn10");
+
+
+    currentClass = classNumber;
+
+
+    if (classNumber === 9) {
+
+        class9.style.display = "block";
+
+        class10.style.display = "none";
+
+        btn9.classList.add("active");
+
+        btn10.classList.remove("active");
+
+    }
+
+
+    if (classNumber === 10) {
+
+        class9.style.display = "none";
+
+        class10.style.display = "block";
+
+        btn10.classList.add("active");
+
+        btn9.classList.remove("active");
+
+    }
+
+
+    document.getElementById("search").value = "";
+
+    hideAllBooks();
+
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+const search =
+    document.getElementById("search");
+
+
+search.addEventListener(
+    "input",
+    function() {
+
+        const searchText =
+            search.value
+            .toLowerCase()
+            .trim();
+
+
+        let visibleClass;
+
+
+        if (currentClass === 9) {
+
+            visibleClass =
+                document.getElementById("class9");
+
+        } else {
+
+            visibleClass =
+                document.getElementById("class10");
+
+        }
+
+
+        const books =
+            visibleClass.querySelectorAll(
+                ".book-card"
+            );
+
+
+        let found = false;
+
+
+        books.forEach(function(book) {
+
+            const bookName =
+                book
+                .getAttribute("data-search")
+                .toLowerCase();
+
+
+            if (
+                bookName.includes(searchText)
+            ) {
+
+                book.style.display =
+                    "block";
+
+                found = true;
+
+            } else {
+
+                book.style.display =
+                    "none";
+
+            }
+
+        });
+
+
+        const noResult =
+            document.getElementById("noResult");
+
+
+        if (
+            searchText !== "" &&
+            !found
+        ) {
+
+            noResult.style.display =
+                "block";
+
+        } else {
+
+            noResult.style.display =
+                "none";
+
+        }
+
+    }
+);
+
+
+/* =========================
+   HIDE BOOKS
+========================= */
+
+function hideAllBooks() {
+
+    const books =
+        document.querySelectorAll(
+            ".book-card"
+        );
+
+
+    books.forEach(function(book) {
+
+        book.style.display =
+            "block";
+
+    });
+
+
+    document.getElementById(
+        "noResult"
+    ).style.display = "none";
+
+}
+
+
+/* =========================
+   CHAPTER TEST ENGINE
+========================= */
+
+/* 20 IMPORTANT MCQs PER CHAPTER — score is calculated out of 20. */
+
+/*
+  The current index page does not contain textbook chapter text.
+  Therefore these are curriculum-aligned starter MCQs for the listed subjects.
+  Replace/extend each chapter bank with textbook-derived questions when
+  the actual chapter files are available.
+*/
+
+const chapterNames = {
+    9: {
+        "Physics": [
+            "Physical Quantities and Measurements","Kinematics","Dynamics",
+            "Turning Effects of Force","Work, Energy and Power",
+            "Mechanical Properties of Matter","Thermal Properties of Matter",
+            "Magnetism","Nature of Science"
+        ],
+        "Chemistry": [
+            "The Science of Chemistry","Atomic Structure","Chemical Bonding",
+            "Stoichiometry","States of Matter","Thermochemistry",
+            "Chemical Equilibrium","Acids, Bases and Salts","Periodic Table and Periodicity",
+            "Group Properties and Elements","Organic Chemistry"
+        ],
+        "Biology": [
+            "The Science of Biology","Biodiversity","The Cell",
+            "Cell Cycle","Tissues, Organs and Organ Systems","Biomolecules",
+            "Enzymes","Bioenergetics","Plant Physiology","Reproduction"
+        ],
+        "Mathematics": [
+            "Real Numbers","Logarithms","Sets and Functions","Factorization and Algebraic Manipulation",
+            "Linear Equations and Inequalities","Trigonometry","Coordinate Geometry",
+            "Logic","Similar Figures","Graphs of Functions","Loci and Construction",
+            "Angle in a Segment of a Circle","Practical Geometry"
+        ],
+        "English": [
+            "Unit 1","Unit 2","Unit 3","Unit 4","Unit 5","Unit 6",
+            "Unit 7","Unit 8","Unit 9","Unit 10","Unit 11"
+        ],
+        "Urdu": [
+            "نثر","نظم","غزل","قواعد و انشاء","فہمِ عبارت"
+        ],
+        "Computer": [
+            "Introduction to Systems","Computer Systems","Computational Thinking",
+            "Data and Analysis","Networks","Cyber Ethics and Security",
+            "Programming Fundamentals","Algorithms and Problem Solving"
+        ],
+        "Islamiyat": [
+            "قرآن مجید","حدیث و سنت","ایمانیات","عبادات","سیرت النبی ﷺ",
+            "اخلاق و آداب","معاشرتی و معاشی تعلیمات"
+        ]
+    },
+    10: {
+        "Physics": [
+            "Simple Harmonic Motion and Waves","Sound","Geometrical Optics",
+            "Electrostatics","Current Electricity","Electromagnetism",
+            "Basic Electronics","Information and Communication Technology",
+            "Atomic and Nuclear Physics"
+        ],
+        "Chemistry": [
+            "Chemical Equilibrium","Acids, Bases and Salts","Organic Chemistry",
+            "Hydrocarbons","Biochemistry","The Atmosphere",
+            "Water","Chemical Industries"
+        ],
+        "Biology": [
+            "Gaseous Exchange","Homeostasis","Coordination and Control",
+            "Support and Movement","Reproduction","Inheritance",
+            "Man and His Environment","Biotechnology","Pharmacology"
+        ],
+        "Mathematics": [
+            "Quadratic Equations","Theory of Quadratic Equations",
+            "Variations","Partial Fractions","Sets and Functions",
+            "Basic Statistics","Introduction to Trigonometry",
+            "Projection of a Side of a Triangle","Chords of a Circle",
+            "Tangent to a Circle","Chords and Arcs","Angle in a Segment",
+            "Practical Geometry"
+        ],
+        "English": [
+            "Unit 1","Unit 2","Unit 3","Unit 4","Unit 5","Unit 6",
+            "Unit 7","Unit 8","Unit 9","Unit 10","Unit 11","Grammar"
+        ],
+        "Urdu": [
+            "نثر","نظم","غزل","قواعد و انشاء","فہمِ عبارت"
+        ],
+        "Computer": [
+            "Problem Solving","Data Types","Input/Output",
+            "Control Structures","Functions","Arrays",
+            "File Handling","Object-Oriented Concepts","Database Basics"
+        ],
+        "Pakistan Studies": [
+            "Ideological Basis of Pakistan","Making of Pakistan",
+            "Land and Environment","History of Pakistan","Constitutional Development",
+            "Foreign Relations","Economic Development","Social and Cultural Development"
+        ]
+    }
+};
+
+/* 20-question banks are produced consistently for every listed chapter.
+   The questions are deliberately general where the uploaded source has no
+   chapter content. This keeps the UI complete without falsely claiming
+   textbook-specific wording. */
+
+const commonQuestionBanks = {
+    "Physics": [
+        ["The SI unit of length is:",["metre","second","kilogram","ampere"],0],
+        ["The SI unit of time is:",["second","metre","newton","joule"],0],
+        ["A quantity having magnitude and direction is called:",["scalar","vector","unit","constant"],1],
+        ["Speed is defined as:",["distance/time","time/distance","mass/volume","force/area"],0],
+        ["The rate of change of velocity is:",["speed","acceleration","distance","work"],1],
+        ["The SI unit of force is:",["joule","watt","newton","pascal"],2],
+        ["Work is done when a force causes:",["mass","displacement","temperature","density"],1],
+        ["The SI unit of energy is:",["joule","newton","ampere","volt"],0],
+        ["Power is the rate of doing:",["force","work","mass","pressure"],1],
+        ["Pressure is force per unit:",["mass","volume","area","time"],2],
+        ["Heat is a form of:",["energy","matter","force","charge"],0],
+        ["The SI unit of temperature is:",["kelvin","celsius only","joule","watt"],0],
+        ["A magnet has two:",["charges","poles","currents","masses"],1],
+        ["Like magnetic poles:",["attract","repel","disappear","rotate"],1],
+        ["A device used to measure electric current is:",["voltmeter","ammeter","barometer","thermometer"],1],
+        ["Electric potential difference is measured in:",["volt","ampere","ohm","watt"],0],
+        ["Resistance is measured in:",["ohm","volt","ampere","joule"],0],
+        ["A lens that is thicker at the centre is generally:",["convex","concave","flat","cylindrical"],0],
+        ["The study of motion without causes is called:",["kinematics","dynamics","statics","thermodynamics"],0],
+        ["Physics is the study of:",["matter, energy and interactions","only plants","only languages","only history"],0]
+    ],
+    "Chemistry": [
+        ["Chemistry is the study of:",["matter and its changes","planets only","languages","maps"],0],
+        ["The smallest unit of an element retaining its properties is:",["atom","cell","tissue","organ"],0],
+        ["The centre of an atom is the:",["nucleus","shell","orbit","bond"],0],
+        ["A negatively charged particle is the:",["proton","neutron","electron","nucleus"],2],
+        ["The atomic number equals the number of:",["protons","neutrons only","shells","molecules"],0],
+        ["A substance with pH below 7 is generally:",["acidic","basic","neutral","metallic"],0],
+        ["A substance with pH 7 is generally:",["acidic","basic","neutral","oxidizing"],2],
+        ["A chemical bond formed by sharing electrons is:",["ionic","covalent","metallic only","nuclear"],1],
+        ["The periodic table arranges elements by:",["atomic number","colour","density only","boiling point only"],0],
+        ["A reaction that releases heat is:",["endothermic","exothermic","physical","reversible only"],1],
+        ["The formula of water is:",["CO2","H2O","O2","NaCl"],1],
+        ["Oxygen supports:",["combustion","rust prevention","freezing only","magnetism"],0],
+        ["A homogeneous mixture is called a:",["solution","suspension","compound only","element"],0],
+        ["The substance dissolved in a solution is the:",["solute","solvent","residue","catalyst"],0],
+        ["The substance that dissolves a solute is the:",["solvent","solute","product","element"],0],
+        ["A catalyst changes the:",["rate of reaction","atomic number","mass of atom","element identity"],0],
+        ["Organic chemistry mainly studies:",["carbon compounds","metals only","water only","noble gases only"],0],
+        ["An element is made of:",["one kind of atom","many unrelated cells","only molecules","only mixtures"],0],
+        ["A physical change generally forms:",["no new substance","a new element","a new atom","a new nucleus"],0],
+        ["The law of conservation of mass states that mass is:",["created only","destroyed only","conserved","always doubled"],2]
+    ],
+    "Biology": [
+        ["The basic unit of life is the:",["cell","tissue","organ","system"],0],
+        ["The control centre of a typical cell is the:",["nucleus","cell wall","vacuole","ribosome"],0],
+        ["Photosynthesis mainly occurs in:",["chloroplasts","nuclei","mitochondria","ribosomes"],0],
+        ["The powerhouse of the cell is the:",["mitochondrion","nucleus","vacuole","cell wall"],0],
+        ["A group of similar cells performing a function is a:",["tissue","organ","organism","system"],0],
+        ["A group of tissues forms an:",["organ","atom","enzyme","ecosystem"],0],
+        ["DNA is mainly responsible for:",["hereditary information","digestion only","movement only","breathing only"],0],
+        ["Enzymes are biological:",["catalysts","acids only","minerals","cells"],0],
+        ["Plants prepare food by:",["photosynthesis","respiration only","excretion","digestion"],0],
+        ["The gas released during photosynthesis is mainly:",["oxygen","nitrogen","carbon dioxide","hydrogen"],0],
+        ["Respiration releases:",["energy","light only","water only","salt only"],0],
+        ["The organ that pumps blood is the:",["heart","lung","kidney","liver"],0],
+        ["Blood vessels carrying blood away from the heart are:",["arteries","veins","capillaries only","bronchi"],0],
+        ["The functional unit of the kidney is the:",["nephron","neuron","alveolus","villus"],0],
+        ["The process by which organisms produce offspring is:",["reproduction","respiration","nutrition","excretion"],0],
+        ["A gene is a unit of:",["heredity","digestion","movement","breathing"],0],
+        ["An ecosystem includes organisms and their:",["environment","genes only","bones only","cells only"],0],
+        ["The movement of water through a selectively permeable membrane is:",["osmosis","diffusion of solids","transpiration","respiration"],0],
+        ["The movement of particles from high to low concentration is:",["diffusion","osmosis only","filtration","digestion"],0],
+        ["The study of living organisms is:",["biology","physics","chemistry","geology"],0]
+    ],
+    "Mathematics": [
+        ["Which is an integer?",["2.5","-3","1/2","√2"],1],
+        ["If x + 5 = 12, x is:",["5","6","7","8"],2],
+        ["The square of 5 is:",["10","20","25","30"],2],
+        ["The square root of 81 is:",["7","8","9","10"],2],
+        ["A triangle has angles whose sum is:",["90°","180°","270°","360°"],1],
+        ["A right angle measures:",["45°","90°","180°","360°"],1],
+        ["The slope of a horizontal line is:",["0","1","undefined","-1"],0],
+        ["The coordinates of the origin are:",["(0,0)","(1,0)","(0,1)","(1,1)"],0],
+        ["A ratio compares quantities by:",["division","addition only","subtraction only","multiplication only"],0],
+        ["The value of 2³ is:",["6","8","9","12"],1],
+        ["The perimeter of a square of side 4 is:",["8","12","16","20"],2],
+        ["The area of a rectangle is:",["length × width","2(length+width)","length/width","length+width"],0],
+        ["The circumference of a circle uses:",["π","e only","0","1 only"],0],
+        ["A linear equation has highest power:",["1","2","3","4"],0],
+        ["The probability of an impossible event is:",["0","1","2","-1"],0],
+        ["The probability of a certain event is:",["0","1","1/2","-1"],1],
+        ["A prime number has exactly:",["1 factor","2 factors","3 factors","4 factors"],1],
+        ["The LCM of 2 and 3 is:",["1","5","6","8"],2],
+        ["The HCF of 12 and 18 is:",["3","6","9","12"],1],
+        ["An angle less than 90° is:",["acute","right","obtuse","straight"],0]
+    ],
+    "Computer": [
+        ["CPU stands for:",["Central Processing Unit","Computer Personal Unit","Central Program Utility","Control Processing User"],0],
+        ["Which device is used to enter text?",["keyboard","monitor","speaker","printer"],0],
+        ["Which device displays output?",["monitor","keyboard","mouse","microphone"],0],
+        ["RAM is generally:",["volatile memory","permanent paper","an input device","a printer"],0],
+        ["ROM is generally:",["non-volatile memory","a mouse","a network","a keyboard"],0],
+        ["An algorithm is:",["step-by-step procedure","a monitor","a cable","a virus only"],0],
+        ["A flowchart represents an algorithm using:",["symbols","sound","photographs only","music"],0],
+        ["A programming error is often called a:",["bug","byte","bit","branch"],0],
+        ["Binary uses:",["0 and 1","1 and 2","2 and 3","A and B"],0],
+        ["The smallest unit of digital information is a:",["bit","byte","file","folder"],0],
+        ["8 bits make a:",["byte","kilobyte","megabyte","gigabyte"],0],
+        ["A network covering a small area is a:",["LAN","WAN","MAN only","PAN only"],0],
+        ["The Internet is a:",["global network","single computer","printer","keyboard"],0],
+        ["A strong password should generally be:",["hard to guess","your name","123456","password"],0],
+        ["Phishing attempts to:",["trick users into revealing information","speed up a CPU","print documents","clean a monitor"],0],
+        ["A database stores:",["organized data","only pictures","only sounds","electricity"],0],
+        ["A compiler translates:",["source code into machine/target code","paper into ink","sound into light","files into folders"],0],
+        ["A loop is used to:",["repeat instructions","delete hardware","turn off electricity","draw a keyboard"],0],
+        ["A variable stores:",["a value that can change","only a monitor","a network cable","a printer"],0],
+        ["Software means:",["programs and instructions","physical parts only","electric wires only","a desk"],0]
+    ]
+};
+
+const languageBank = [
+    ["Which word is a noun?",["School","Quickly","Beautiful","Run"],0],
+    ["Which word is a verb?",["Run","Blue","School","Quickly"],0],
+    ["Which word is an adjective?",["Beautiful","Run","School","Quickly"],0],
+    ["Which word is an adverb?",["Quickly","Beauty","Beautiful","Run"],0],
+    ["The plural of 'child' is:",["Childs","Children","Childes","Childrens"],1],
+    ["The opposite of 'hot' is:",["cold","warm","heat","fire"],0],
+    ["A sentence ending with a question normally uses:",["?","!",";",":"],0],
+    ["A sentence expressing strong feeling may use:",["!","?",";",","],0],
+    ["A word with the same meaning is a:",["synonym","antonym","verb","article"],0],
+    ["A word with opposite meaning is an:",["antonym","synonym","noun","adverb"],0],
+    ["'He is going' is in the:",["present continuous","simple past","future perfect","past perfect"],0],
+    ["'She has finished' is in the:",["present perfect","simple past","future","past continuous"],0],
+    ["A group of words with a subject and predicate is commonly a:",["clause","letter","syllable","prefix"],0],
+    ["The comparative of 'good' is:",["better","gooder","best","well"],0],
+    ["The superlative of 'good' is:",["best","better","goodest","well"],0],
+    ["An article before a vowel sound is often:",["an","a","the only","no article"],0],
+    ["A pronoun can replace a:",["noun","verb only","adverb only","punctuation mark"],0],
+    ["The past tense of 'go' is:",["went","goed","gone","going"],0],
+    ["The past participle of 'write' is:",["written","wrote","writing","writes"],0],
+    ["A paragraph should normally focus on:",["a central idea","random words","one letter","only punctuation"],0]
+];
+
+const urduBank = [
+    ["اسم کسے کہتے ہیں؟",["نام کو","کام کو","صفت کو","حرف کو"],0],
+    ["فعل کسے کہتے ہیں؟",["کام کو","نام کو","صفت کو","حرف کو"],0],
+    ["صفت کس کی خوبی یا خامی بیان کرتی ہے؟",["اسم","حرف","عدد فقط","وقفہ"],0],
+    ["لفظ 'کتاب' کی جمع کیا ہے؟",["کتابیں","کتابی","کتابا","کتابان"],0],
+    ["'خوبصورت' کس قسم کا لفظ ہے؟",["صفت","اسم","فعل","حرف"],0],
+    ["جملے کے آخر میں سوالیہ انداز کے لیے کون سی علامت آتی ہے؟",["؟","۔","!","؛"],0],
+    ["جملے کے آخر میں عام طور پر کون سی علامت آتی ہے؟",["۔","؟","!","،"],0],
+    ["ہم معنی الفاظ کو کیا کہتے ہیں؟",["مترادف","متضاد","واحد","جمع"],0],
+    ["مخالف معنی والے الفاظ کو کیا کہتے ہیں؟",["متضاد","مترادف","واحد","صفت"],0],
+    ["'لڑکا' کی جمع کیا ہے؟",["لڑکے","لڑکیاں","لڑکاں","لڑکی"],0],
+    ["'بچہ' کی جمع کیا ہے؟",["بچے","بچیاں","بچوںہ","بچہات"],0],
+    ["'دن' کی ضد کیا ہے؟",["رات","صبح","شام","روشنی"],0],
+    ["'اچھا' کی ضد کیا ہے؟",["برا","بہتر","خوب","نیک"],0],
+    ["نظم میں عموماً کیا پایا جاتا ہے؟",["اشعار","صرف نثر","صرف جدول","صرف اعداد"],0],
+    ["غزل کی ہر اکائی کو عام طور پر کیا کہا جاتا ہے؟",["شعر","باب","سبق","فقرہ"],0],
+    ["حرفِ جار کی مثال ہے:",["میں","خوبصورت","دوڑنا","کتاب"],0],
+    ["ضمیر کس کی جگہ آتا ہے؟",["اسم","فعل","صفت","علامت"],0],
+    ["واحد کی مثال ہے:",["کتاب","کتابیں","لڑکے","بچے"],0],
+    ["جمع کی مثال ہے:",["کتابیں","کتاب","قلم","گھر"],0],
+    ["اردو رسم الخط عام طور پر کس سمت لکھا جاتا ہے؟",["دائیں سے بائیں","بائیں سے دائیں","اوپر سے نیچے","نیچے سے اوپر"],0]
+];
+
+const islamiyatBank = [
+    ["اسلام کے ارکان کی تعداد کتنی ہے؟",["3","4","5","6"],2],
+    ["نماز کی فرض نمازیں روزانہ کتنی ہیں؟",["3","4","5","6"],2],
+    ["اسلام کی مقدس کتاب ہے:",["قرآن مجید","بائبل","تورات","وید"],0],
+    ["قرآن مجید کس زبان میں نازل ہوا؟",["عربی","فارسی","اردو","عبرانی"],0],
+    ["روزہ کس اسلامی مہینے میں فرض ہے؟",["رمضان","محرم","رجب","شوال"],0],
+    ["زکوٰۃ اسلام کے کس رکن میں شامل ہے؟",["مالی عبادت","صرف اخلاق","صرف تجارت","صرف سفر"],0],
+    ["حج کہاں ادا کیا جاتا ہے؟",["مکہ مکرمہ","مدینہ منورہ فقط","لاہور","بغداد"],0],
+    ["کعبہ شریف کس شہر میں ہے؟",["مکہ مکرمہ","مدینہ منورہ","طائف","جدہ"],0],
+    ["ہجرت کے بعد نبی کریم ﷺ کس شہر تشریف لے گئے؟",["مدینہ منورہ","مکہ مکرمہ","طائف","بصرہ"],0],
+    ["اسلام میں نیت کی اہمیت کس عمل سے متعلق ہے؟",["اعمال","صرف تجارت","صرف سفر","صرف خوراک"],0],
+    ["حدیث سے مراد نبی کریم ﷺ کے:",["اقوال، افعال اور تقریرات","صرف سفر","صرف لباس","صرف تجارت"],0],
+    ["سنت سے مراد نبی کریم ﷺ کا:",["طریقہ و معمول","صرف نام","صرف شہر","صرف نسب"],0],
+    ["صدقہ کا بنیادی مقصد ہے:",["نیکی اور مدد","صرف منافع","صرف کھیل","صرف سفر"],0],
+    ["عدل کا مطلب ہے:",["انصاف","غصہ","تکبر","لالچ"],0],
+    ["امانت داری کا تعلق ہے:",["دیانت سے","غفلت سے","جھوٹ سے","خیانت سے"],0],
+    ["والدین کے ساتھ سلوک ہونا چاہیے:",["احترام والا","بدسلوکی والا","سختی والا","غفلت والا"],0],
+    ["اسلامی تعلیمات میں سچائی ہے:",["اہم اخلاقی خوبی","غیر ضروری","منع","صرف تجارت"],0],
+    ["مسلمانوں کا قبلہ ہے:",["کعبہ","مسجد نبوی فقط","مسجد اقصیٰ فقط","کوئی نہیں"],0],
+    ["عیدالفطر کس کے بعد آتی ہے؟",["رمضان","محرم","ذوالحجہ","صفر"],0],
+    ["عیدالاضحیٰ کا تعلق کس عبادت سے بھی ہے؟",["قربانی","روزہ فقط","زکوٰۃ فقط","اعتکاف فقط"],0]
+];
+
+const pakBank = [
+    ["پاکستان وجود میں آیا:",["1940","1947","1956","1973"],1],
+    ["قرارداد لاہور منظور ہوئی:",["1930","1940","1947","1956"],1],
+    ["قرارداد لاہور کس شہر میں منظور ہوئی؟",["لاہور","کراچی","اسلام آباد","پشاور"],0],
+    ["پاکستان کا دارالحکومت ہے:",["اسلام آباد","لاہور","کراچی","کوئٹہ"],0],
+    ["پاکستان کی قومی زبان ہے:",["اردو","پنجابی","سندھی","انگریزی"],0],
+    ["پاکستان کا قومی پرچم بنیادی طور پر کس رنگ پر مشتمل ہے؟",["سبز اور سفید","نیلا اور سفید","سرخ اور سفید","زرد اور سبز"],0],
+    ["پاکستان کا سرکاری نظامِ حکومت ہے:",["جمہوری آئینی نظام","بادشاہت","قبائلی نظام","نوآبادیاتی نظام"],0],
+    ["آئین پاکستان 1973 میں:",["منظور ہوا","1947 میں ختم ہوا","1930 میں بنا","1956 میں بنا"],0],
+    ["پاکستان کا سب سے بڑا صوبہ رقبے کے لحاظ سے ہے:",["بلوچستان","پنجاب","سندھ","خیبر پختونخوا"],0],
+    ["پاکستان کا سب سے زیادہ آبادی والا صوبہ ہے:",["پنجاب","بلوچستان","سندھ","خیبر پختونخوا"],0],
+    ["پاکستان کے جنوب میں ہے:",["بحیرہ عرب","بحر اوقیانوس","بحر الکاہل","بحر روم"],0],
+    ["قومی شاعر کے طور پر مشہور ہیں:",["علامہ محمد اقبال","سر سید احمد خان","قائداعظم","لیاقت علی خان"],0],
+    ["قائداعظم کا نام تھا:",["محمد علی جناح","محمد اقبال","لیاقت حسین","عبدالقدیر"],0],
+    ["پاکستان کے پہلے گورنر جنرل تھے:",["محمد علی جناح","لیاقت علی خان","ایوب خان","اسکندر مرزا"],0],
+    ["پاکستان کے پہلے وزیر اعظم تھے:",["لیاقت علی خان","محمد علی جناح","ایوب خان","ذوالفقار علی بھٹو"],0],
+    ["پاکستان کی آزادی کی تاریخ ہے:",["14 اگست 1947","23 مارچ 1940","25 دسمبر 1947","6 ستمبر 1947"],0],
+    ["یوم پاکستان منایا جاتا ہے:",["23 مارچ","14 اگست","6 ستمبر","25 دسمبر"],0],
+    ["پاکستان کا قومی پھول ہے:",["چنبیلی","گلاب","سورج مکھی","لالہ"],0],
+    ["پاکستان کا قومی جانور ہے:",["مارخور","شیر","ہاتھی","ہرن"],0],
+    ["پاکستان کا قومی کھیل روایتی طور پر مانا جاتا ہے:",["ہاکی","کرکٹ","فٹبال","ٹینس"],0]
+];
+
+function bankForSubject(subject) {
+    if (subject === "English") return languageBank;
+    if (subject === "Urdu") return urduBank;
+    if (subject === "Islamiyat") return islamiyatBank;
+    if (subject === "Pakistan Studies") return pakBank;
+    return commonQuestionBanks[subject] || languageBank;
+}
+
+let testClass = 9;
+let testSubject = "Physics";
+let testChapter = 0;
+let testIndex = 0;
+let testCorrect = 0;
+let testAnswered = false;
+
+function openChapterTests() {
+    document.getElementById("class9").style.display = "none";
+    document.getElementById("class10").style.display = "none";
+    document.querySelector(".class-buttons").style.display = "none";
+    document.querySelector(".test-nav").style.display = "none";
+    document.querySelector(".short-nav").style.display = "none";
+    document.getElementById("shortQuestions").style.display = "none";
+    document.querySelectorAll(".section-title").forEach(e => e.style.display = "none");
+    document.getElementById("chapterTests").style.display = "block";
+
+    renderTestNavigation();
+    startChapterTest();
+    window.scrollTo({top:0, behavior:"smooth"});
+}
+
+function renderTestNavigation() {
+    const classBox = document.getElementById("testClassTabs");
+    const subjectBox = document.getElementById("testSubjectTabs");
+    const chapterBox = document.getElementById("testChapterTabs");
+
+    classBox.innerHTML = "";
+    [9,10].forEach(c => {
+        const b = document.createElement("button");
+        b.className = "test-tab" + (c === testClass ? " active" : "");
+        b.textContent = c + "th Class";
+        b.onclick = () => {
+            testClass = c;
+            testSubject = Object.keys(chapterNames[c])[0];
+            testChapter = 0;
+            renderTestNavigation();
+            startChapterTest();
+        };
+        classBox.appendChild(b);
+    });
+
+    subjectBox.innerHTML = "";
+    Object.keys(chapterNames[testClass]).forEach(s => {
+        const b = document.createElement("button");
+        b.className = "test-tab" + (s === testSubject ? " active" : "");
+        b.textContent = s;
+        b.onclick = () => {
+            testSubject = s;
+            testChapter = 0;
+            renderTestNavigation();
+            startChapterTest();
+        };
+        subjectBox.appendChild(b);
+    });
+
+    chapterBox.innerHTML = "";
+    chapterNames[testClass][testSubject].forEach((name, i) => {
+        const b = document.createElement("button");
+        b.className = "test-tab" + (i === testChapter ? " active" : "");
+        b.textContent = "Ch " + (i + 1) + ": " + name;
+        b.onclick = () => {
+            testChapter = i;
+            startChapterTest();
+            renderTestNavigation();
+        };
+        chapterBox.appendChild(b);
+    });
+}
+
+function startChapterTest() {
+    testIndex = 0;
+    testCorrect = 0;
+    testAnswered = false;
+    document.getElementById("testPanel").innerHTML = `
+        <div class="test-breadcrumb" id="testBreadcrumb"></div>
+        <div class="test-progress" id="testProgress"></div>
+        <div class="test-question" id="testQuestion"></div>
+        <div class="test-options" id="testOptions"></div>
+        <div class="test-feedback" id="testFeedback"></div>
+        <div class="test-controls">
+            <div class="test-score-live" id="testScoreLive">Marks: 0 / 20</div>
+            <button class="test-next" id="testNext" onclick="nextTestQuestion()">Next Question →</button>
+        </div>`;
+    renderTestQuestion();
+}
+
+function getChapterQuestions(subject, chapterIndex) {
+    const bank = bankForSubject(subject);
+    const count = Math.min(20, bank.length);
+    const start = (chapterIndex * count) % bank.length;
+    const questions = [];
+
+    for (let i = 0; i < count; i++) {
+        questions.push(bank[(start + i) % bank.length]);
+    }
+
+    return questions;
+}
+
+function renderTestQuestion() {
+    const bank = getChapterQuestions(testSubject, testChapter);
+    const q = bank[testIndex];
+
+    document.getElementById("testBreadcrumb").textContent =
+        testClass + "th Class → " + testSubject + " → Chapter " +
+        (testChapter + 1) + ": " +
+        chapterNames[testClass][testSubject][testChapter];
+
+    document.getElementById("testProgress").textContent =
+        "Question " + (testIndex + 1) + " of 20";
+
+    document.getElementById("testQuestion").textContent = q[0];
+
+    const box = document.getElementById("testOptions");
+    box.innerHTML = "";
+
+    q[1].forEach((option, i) => {
+        const b = document.createElement("button");
+        b.className = "test-option";
+        b.textContent = String.fromCharCode(65+i) + ". " + option;
+        b.onclick = () => answerTest(i, q[2]);
+        box.appendChild(b);
+    });
+
+    document.getElementById("testFeedback").textContent = "";
+    document.getElementById("testScoreLive").textContent =
+        "Marks: " + testCorrect + " / " + testIndex;
+    document.getElementById("testNext").style.display = "inline-block";
+    testAnswered = false;
+}
+
+function answerTest(selected, correct) {
+    if (testAnswered) return;
+    testAnswered = true;
+
+    const options = document.querySelectorAll(".test-option");
+    options.forEach((b, i) => {
+        b.disabled = true;
+        if (i === correct) b.classList.add("correct");
+        if (i === selected && i !== correct) b.classList.add("wrong");
+    });
+
+    const feedback = document.getElementById("testFeedback");
+    if (selected === correct) {
+        testCorrect++;
+        feedback.textContent = "✓ Correct!";
+        feedback.style.color = "#159447";
+    } else {
+        feedback.textContent =
+            "✗ Incorrect. Correct answer: " +
+            String.fromCharCode(65 + correct) + ".";
+        feedback.style.color = "#c62828";
+    }
+
+    document.getElementById("testScoreLive").textContent =
+        "Marks: " + testCorrect + " / " + (testIndex + 1);
+}
+
+function nextTestQuestion() {
+    if (!testAnswered) return;
+
+    if (testIndex >= 19) {
+        showTestResult();
+        return;
+    }
+
+    testIndex++;
+    renderTestQuestion();
+}
+
+function showTestResult() {
+    const percentage = Math.round((testCorrect / 20) * 100);
+    let message = "Test completed!";
+
+    if (percentage >= 80) message = "Excellent work!";
+    else if (percentage >= 60) message = "Good work!";
+    else if (percentage >= 40) message = "Keep practicing!";
+    else message = "Practice this chapter again.";
+
+    document.getElementById("testPanel").innerHTML = `
+        <div class="test-result">
+            <h2>🎉 Chapter Test Complete</h2>
+            <div class="test-marks">Marks: ${testCorrect} / 20</div>
+            <div class="test-percentage">Percentage: ${percentage}%</div>
+            <p class="test-note">
+                ${testClass}th Class — ${testSubject}<br>
+                Chapter ${testChapter + 1}: ${chapterNames[testClass][testSubject][testChapter]}<br>
+                ${message}
+            </p>
+            <button class="test-restart" onclick="startChapterTest()">
+                Retake Test
+            </button>
+        </div>`;
+}
+
+/* Return from the test area when class buttons are used. */
+const originalShowClass = showClass;
+showClass = function(classNumber) {
+    document.getElementById("chapterTests").style.display = "none";
+    document.getElementById("shortQuestions").style.display = "none";
+    document.querySelector(".class-buttons").style.display = "flex";
+    document.querySelector(".test-nav").style.display = "block";
+    document.querySelector(".short-nav").style.display = "block";
+    document.querySelectorAll(".section-title").forEach(e => e.style.display = "block");
+    originalShowClass(classNumber);
+};
+
+
+
+/* =========================
+   SHORT QUESTION SYSTEM
+========================= */
+
+/*
+  The source program contains chapter names but does not contain the
+  complete textbook text for every chapter. Therefore the short-question
+  system uses the subject-level short-question banks below and selects
+  10 questions for each listed chapter.
+*/
+
+const shortQuestionBanks = {
+    "Physics": [
+        ["What is physics?", "Physics is the branch of science that studies matter, energy, motion and their interactions."],
+        ["What is a physical quantity?", "A physical quantity is a measurable property expressed with a numerical value and a unit."],
+        ["What is SI?", "SI is the International System of Units used for standard measurement."],
+        ["What is speed?", "Speed is the distance travelled per unit time."],
+        ["What is velocity?", "Velocity is speed in a specified direction."],
+        ["What is acceleration?", "Acceleration is the rate of change of velocity with time."],
+        ["What is force?", "Force is a push or pull that can change the motion or shape of an object."],
+        ["What is work?", "Work is done when a force causes displacement in the direction of the force."],
+        ["What is energy?", "Energy is the capacity to do work."],
+        ["What is power?", "Power is the rate at which work is done."],
+        ["What is pressure?", "Pressure is force acting per unit area."],
+        ["What is heat?", "Heat is energy transferred because of a temperature difference."],
+        ["What is temperature?", "Temperature is a measure related to the thermal state of a body."],
+        ["What is a magnet?", "A magnet is a material that produces a magnetic field and has magnetic poles."],
+        ["What is electric current?", "Electric current is the rate of flow of electric charge."],
+        ["What is voltage?", "Voltage is the potential difference between two points."],
+        ["What is resistance?", "Resistance is the opposition offered to the flow of electric current."],
+        ["What is a lens?", "A lens is a transparent optical device that refracts light."],
+        ["What is kinematics?", "Kinematics is the study of motion without considering its causes."],
+        ["What is dynamics?", "Dynamics is the study of motion and the forces causing it."]
+    ],
+    "Chemistry": [
+        ["What is chemistry?", "Chemistry is the study of matter, its properties, composition and changes."],
+        ["What is matter?", "Matter is anything that has mass and occupies space."],
+        ["What is an atom?", "An atom is the smallest unit of an element that retains its chemical identity."],
+        ["What is a molecule?", "A molecule is a group of atoms chemically bonded together."],
+        ["What is an element?", "An element is a pure substance made of atoms with the same atomic number."],
+        ["What is a compound?", "A compound is a pure substance formed when elements chemically combine in fixed proportions."],
+        ["What is an ion?", "An ion is an atom or group of atoms carrying an electric charge."],
+        ["What is a chemical bond?", "A chemical bond is an attractive force that holds atoms or ions together."],
+        ["What is pH?", "pH is a scale used to indicate how acidic or basic a solution is."],
+        ["What is an acid?", "An acid is a substance that produces hydrogen ions in aqueous solution."],
+        ["What is a base?", "A base is a substance that can accept hydrogen ions or produce hydroxide ions in water."],
+        ["What is a catalyst?", "A catalyst changes the rate of a chemical reaction without being consumed overall."],
+        ["What is a solution?", "A solution is a homogeneous mixture of a solute and a solvent."],
+        ["What is a solute?", "A solute is the substance dissolved in a solution."],
+        ["What is a solvent?", "A solvent is the substance that dissolves the solute."],
+        ["What is an exothermic reaction?", "An exothermic reaction releases heat to the surroundings."],
+        ["What is an endothermic reaction?", "An endothermic reaction absorbs heat from the surroundings."],
+        ["What is organic chemistry?", "Organic chemistry mainly deals with carbon-containing compounds."],
+        ["What is the periodic table?", "The periodic table is an organized arrangement of chemical elements."],
+        ["What is conservation of mass?", "It states that mass is conserved during a chemical reaction."]
+    ],
+    "Biology": [
+        ["What is biology?", "Biology is the study of living organisms."],
+        ["What is a cell?", "A cell is the basic structural and functional unit of life."],
+        ["What is a tissue?", "A tissue is a group of similar cells performing a particular function."],
+        ["What is an organ?", "An organ is a structure made of different tissues working together."],
+        ["What is the nucleus?", "The nucleus contains genetic material and controls many cell activities."],
+        ["What is a mitochondrion?", "A mitochondrion is an organelle involved in releasing usable energy from food."],
+        ["What is photosynthesis?", "Photosynthesis is the process by which green plants make food using light energy."],
+        ["What is respiration?", "Respiration is the process by which cells release energy from food."],
+        ["What are enzymes?", "Enzymes are biological catalysts that speed up chemical reactions."],
+        ["What is DNA?", "DNA is the molecule that carries hereditary information."],
+        ["What is a gene?", "A gene is a segment of DNA that carries hereditary information."],
+        ["What is reproduction?", "Reproduction is the biological process by which organisms produce offspring."],
+        ["What is osmosis?", "Osmosis is the movement of water through a selectively permeable membrane."],
+        ["What is diffusion?", "Diffusion is the movement of particles from a region of higher concentration to lower concentration."],
+        ["What is an ecosystem?", "An ecosystem consists of living organisms interacting with their physical environment."],
+        ["What is homeostasis?", "Homeostasis is the maintenance of relatively stable internal conditions."],
+        ["What is heredity?", "Heredity is the transmission of characteristics from parents to offspring."],
+        ["What is biodiversity?", "Biodiversity is the variety of living organisms in a region or on Earth."],
+        ["What is a chromosome?", "A chromosome is a DNA-containing structure that carries genetic information."],
+        ["What is biotechnology?", "Biotechnology uses living organisms or biological processes for useful purposes."]
+    ],
+    "Mathematics": [
+        ["What is a real number?", "A real number is any number that can be represented on the real number line."],
+        ["What is an integer?", "An integer is a whole number that may be positive, negative or zero."],
+        ["What is a rational number?", "A rational number can be written as p/q where p and q are integers and q is not zero."],
+        ["What is an irrational number?", "An irrational number cannot be written as a ratio of two integers."],
+        ["What is an equation?", "An equation is a mathematical statement showing that two expressions are equal."],
+        ["What is a variable?", "A variable is a symbol used to represent a value that may change."],
+        ["What is a function?", "A function is a relation in which each input has exactly one output."],
+        ["What is a logarithm?", "A logarithm is the exponent to which a base must be raised to obtain a given number."],
+        ["What is factorization?", "Factorization is expressing a mathematical expression as a product of factors."],
+        ["What is an inequality?", "An inequality compares two expressions using signs such as <, >, ≤ or ≥."],
+        ["What is a triangle?", "A triangle is a polygon with three sides and three angles."],
+        ["What is trigonometry?", "Trigonometry studies relationships between angles and sides of triangles."],
+        ["What is a coordinate plane?", "A coordinate plane is a plane defined by two perpendicular number lines."],
+        ["What is the origin?", "The origin is the point (0,0) on the coordinate plane."],
+        ["What is a slope?", "Slope measures the steepness of a line."],
+        ["What is a circle?", "A circle is the set of points at a fixed distance from a centre."],
+        ["What is a chord?", "A chord is a line segment joining two points on a circle."],
+        ["What is a tangent?", "A tangent is a line that touches a circle at one point."],
+        ["What is probability?", "Probability measures the likelihood of an event occurring."],
+        ["What is geometry?", "Geometry is the branch of mathematics concerned with shapes, sizes and spatial relationships."]
+    ],
+    "Computer": [
+        ["What is a computer?", "A computer is an electronic device that processes data according to instructions."],
+        ["What is hardware?", "Hardware means the physical parts of a computer system."],
+        ["What is software?", "Software consists of programs and instructions used by a computer."],
+        ["What is the CPU?", "The CPU is the main processing unit that executes instructions."],
+        ["What is RAM?", "RAM is temporary memory used to store data and programs currently in use."],
+        ["What is ROM?", "ROM is non-volatile memory that stores information that normally remains after power is removed."],
+        ["What is an algorithm?", "An algorithm is a step-by-step procedure for solving a problem."],
+        ["What is a flowchart?", "A flowchart is a diagram that represents the steps of an algorithm."],
+        ["What is a programming language?", "A programming language is a formal language used to write computer programs."],
+        ["What is a variable?", "A variable is a named storage location whose value can change during program execution."],
+        ["What is a loop?", "A loop repeatedly executes a set of instructions."],
+        ["What is an array?", "An array stores multiple values of the same type or related data under one name."],
+        ["What is a database?", "A database is an organized collection of data."],
+        ["What is a network?", "A computer network connects devices so they can communicate and share resources."],
+        ["What is LAN?", "LAN stands for Local Area Network and connects devices in a limited area."],
+        ["What is the Internet?", "The Internet is a worldwide network of interconnected computer networks."],
+        ["What is cybersecurity?", "Cybersecurity protects computers, networks and data from unauthorized access and attacks."],
+        ["What is phishing?", "Phishing is an attempt to trick people into revealing sensitive information."],
+        ["What is debugging?", "Debugging is the process of finding and correcting errors in a program."],
+        ["What is binary?", "Binary is a number system that uses only 0 and 1."]
+    ],
+    "English": [
+        ["What is a noun?", "A noun is a word used to name a person, place, thing or idea."],
+        ["What is a pronoun?", "A pronoun is a word used in place of a noun."],
+        ["What is a verb?", "A verb expresses an action, occurrence or state."],
+        ["What is an adjective?", "An adjective describes or modifies a noun or pronoun."],
+        ["What is an adverb?", "An adverb modifies a verb, adjective or another adverb."],
+        ["What is a sentence?", "A sentence is a group of words that expresses a complete thought."],
+        ["What is a clause?", "A clause is a group of words containing a subject and a verb."],
+        ["What is a synonym?", "A synonym is a word with a similar meaning to another word."],
+        ["What is an antonym?", "An antonym is a word with an opposite meaning."],
+        ["What is a paragraph?", "A paragraph is a group of related sentences developing one main idea."],
+        ["What is a tense?", "Tense shows the time of an action or state."],
+        ["What is a preposition?", "A preposition shows a relationship between a noun or pronoun and another word."],
+        ["What is a conjunction?", "A conjunction joins words, phrases or clauses."],
+        ["What is active voice?", "In active voice, the subject performs the action."],
+        ["What is passive voice?", "In passive voice, the subject receives the action."],
+        ["What is direct speech?", "Direct speech reports the exact words spoken by someone."],
+        ["What is indirect speech?", "Indirect speech reports what someone said without quoting the exact words."],
+        ["What is a paragraph's main idea?", "The main idea is the central point the paragraph communicates."],
+        ["What is a summary?", "A summary briefly presents the main points of a text."],
+        ["What is comprehension?", "Comprehension is understanding the meaning of what is read or heard."]
+    ],
+    "Urdu": [
+        ["اسم کیا ہے؟", "اسم وہ لفظ ہے جو کسی شخص، جگہ، چیز یا خیال کا نام ظاہر کرے۔"],
+        ["فعل کیا ہے؟", "فعل وہ لفظ ہے جو کسی کام یا حالت کو ظاہر کرے۔"],
+        ["صفت کیا ہے؟", "صفت وہ لفظ ہے جو اسم کی خوبی، خامی یا حالت بیان کرے۔"],
+        ["ضمیر کیا ہے؟", "ضمیر وہ لفظ ہے جو اسم کی جگہ استعمال ہوتا ہے۔"],
+        ["واحد کیا ہے؟", "واحد ایسا لفظ ہے جو ایک شخص، چیز یا جگہ کو ظاہر کرے۔"],
+        ["جمع کیا ہے؟", "جمع ایسا لفظ ہے جو ایک سے زیادہ افراد یا اشیا کو ظاہر کرے۔"],
+        ["مترادف الفاظ کیا ہیں؟", "مترادف وہ الفاظ ہیں جن کے معنی ایک جیسے یا قریب قریب ہوں۔"],
+        ["متضاد الفاظ کیا ہیں؟", "متضاد وہ الفاظ ہیں جن کے معنی ایک دوسرے کے مخالف ہوں۔"],
+        ["جملہ کیا ہے؟", "الفاظ کا ایسا مجموعہ جو مکمل مفہوم ادا کرے جملہ کہلاتا ہے۔"],
+        ["نثر کیا ہے؟", "عام تحریری انداز کو نثر کہتے ہیں جس میں شعری وزن ضروری نہیں ہوتا۔"],
+        ["نظم کیا ہے؟", "شاعری کی ایسی صنف جس میں اشعار مخصوص ترتیب اور موضوع کے ساتھ ہوں نظم کہلاتی ہے۔"],
+        ["غزل کیا ہے؟", "غزل اردو شاعری کی ایک معروف صنف ہے جس کے اشعار ایک خاص شعری انداز میں ہوتے ہیں۔"],
+        ["حرف کیا ہے؟", "حرف ایسا لفظ ہے جو دوسرے الفاظ کے درمیان تعلق یا معنی پیدا کرے۔"],
+        ["فعل لازم کیا ہے؟", "فعل لازم وہ فعل ہے جس کے لیے مفعول ضروری نہیں ہوتا۔"],
+        ["فعل متعدی کیا ہے؟", "فعل متعدی وہ فعل ہے جس کا اثر کسی مفعول پر پڑتا ہے۔"],
+        ["محاورہ کیا ہے؟", "محاورہ ایسا مرکب یا فقرہ ہے جو خاص مفہوم میں استعمال ہوتا ہے۔"],
+        ["کہاوت کیا ہے؟", "کہاوت ایک مشہور مختصر قول ہے جس میں تجربے یا نصیحت کا مفہوم ہوتا ہے۔"],
+        ["تشبیہ کیا ہے؟", "تشبیہ میں ایک چیز کو کسی مشترک صفت کی وجہ سے دوسری چیز سے ملایا جاتا ہے۔"],
+        ["استعارہ کیا ہے؟", "استعارہ میں کسی لفظ کو حقیقی معنی کے بجائے مجازی معنی میں استعمال کیا جاتا ہے۔"],
+        ["فہمِ عبارت کیا ہے؟", "فہمِ عبارت سے مراد پڑھی ہوئی عبارت کا مطلب اور مرکزی خیال سمجھنا ہے۔"]
+    ],
+    "Islamiyat": [
+        ["اسلام کے ارکان کتنے ہیں؟", "اسلام کے پانچ بنیادی ارکان ہیں۔"],
+        ["قرآن مجید کیا ہے؟", "قرآن مجید مسلمانوں کی مقدس کتاب اور اللہ تعالیٰ کا کلام ہے۔"],
+        ["حدیث کیا ہے؟", "حدیث نبی کریم ﷺ کے اقوال، افعال اور تقریرات کی روایت ہے۔"],
+        ["سنت کیا ہے؟", "سنت نبی کریم ﷺ کے طریقے اور معمولات کو کہتے ہیں۔"],
+        ["نماز کیا ہے؟", "نماز اسلام کی اہم عبادت اور اسلام کے بنیادی ارکان میں سے ایک ہے۔"],
+        ["روزہ کیا ہے؟", "روزہ اللہ تعالیٰ کی عبادت کے لیے مقررہ وقت میں کھانے پینے وغیرہ سے رکنے کا نام ہے۔"],
+        ["زکوٰۃ کیا ہے؟", "زکوٰۃ صاحبِ نصاب مسلمانوں کے مال میں مقررہ حق مستحقین کو ادا کرنا ہے۔"],
+        ["حج کیا ہے؟", "حج مخصوص ایام میں بیت اللہ کی زیارت اور مقررہ عبادات ادا کرنے کا نام ہے۔"],
+        ["توحید کیا ہے؟", "توحید اللہ تعالیٰ کو واحد معبود ماننے کا عقیدہ ہے۔"],
+        ["رسالت کیا ہے؟", "رسالت اللہ تعالیٰ کے پیغام کو انسانوں تک پہنچانے کے لیے انبیاء کی بعثت کا عقیدہ ہے۔"],
+        ["آخرت سے کیا مراد ہے؟", "آخرت سے مراد دنیاوی زندگی کے بعد کی دائمی زندگی ہے۔"],
+        ["صدق کیا ہے؟", "صدق سچائی اور راست گوئی کو کہتے ہیں۔"],
+        ["امانت داری کیا ہے؟", "امانت داری سے مراد سپرد کی گئی چیز یا ذمہ داری کو دیانت سے ادا کرنا ہے۔"],
+        ["عدل کیا ہے؟", "عدل کا مطلب انصاف کرنا اور ہر شخص کو اس کا حق دینا ہے۔"],
+        ["والدین کے ساتھ حسنِ سلوک کیا ہے؟", "والدین کے ساتھ احترام، خدمت اور اچھے اخلاق سے پیش آنا حسنِ سلوک ہے۔"],
+        ["اخلاق کیا ہیں؟", "اخلاق انسان کے اچھے یا برے رویوں اور کردار کو کہتے ہیں۔"],
+        ["صدقہ کیا ہے؟", "صدقہ اللہ کی رضا کے لیے خیر اور مدد کے طور پر دیا جانے والا مال یا عمل ہے۔"],
+        ["قبلہ کیا ہے؟", "قبلہ وہ سمت ہے جس کی طرف رخ کرکے مسلمان نماز ادا کرتے ہیں؛ وہ خانہ کعبہ ہے۔"],
+        ["ہجرت کیا ہے؟", "ہجرت اللہ کی رضا کے لیے ایک جگہ سے دوسری جگہ منتقل ہونے کو کہتے ہیں۔"],
+        ["سیرت النبی ﷺ کیا ہے؟", "سیرت النبی ﷺ سے مراد نبی کریم ﷺ کی زندگی، کردار اور تعلیمات کا مطالعہ ہے۔"]
+    ],
+    "Pakistan Studies": [
+        ["پاکستان کب قائم ہوا؟", "پاکستان 14 اگست 1947ء کو قائم ہوا۔"],
+        ["قرارداد لاہور کب منظور ہوئی؟", "قرارداد لاہور 23 مارچ 1940ء کو منظور ہوئی۔"],
+        ["قائداعظم کا پورا نام کیا تھا؟", "قائداعظم کا نام محمد علی جناح تھا۔"],
+        ["پاکستان کا دارالحکومت کیا ہے؟", "پاکستان کا دارالحکومت اسلام آباد ہے۔"],
+        ["پاکستان کی قومی زبان کیا ہے؟", "پاکستان کی قومی زبان اردو ہے۔"],
+        ["پاکستان کے کتنے صوبے ہیں؟", "پاکستان کے چار صوبے ہیں۔"],
+        ["پاکستان کا سب سے بڑا صوبہ رقبے کے لحاظ سے کون سا ہے؟", "بلوچستان رقبے کے لحاظ سے سب سے بڑا صوبہ ہے۔"],
+        ["پاکستان کا سب سے زیادہ آبادی والا صوبہ کون سا ہے؟", "پنجاب آبادی کے لحاظ سے سب سے بڑا صوبہ ہے۔"],
+        ["پاکستان کے جنوب میں کون سا سمندر ہے؟", "پاکستان کے جنوب میں بحیرہ عرب ہے۔"],
+        ["قومی شاعر کسے کہا جاتا ہے؟", "علامہ محمد اقبال کو پاکستان کا قومی شاعر کہا جاتا ہے۔"],
+        ["پاکستان کے پہلے گورنر جنرل کون تھے؟", "محمد علی جناح پاکستان کے پہلے گورنر جنرل تھے۔"],
+        ["پاکستان کے پہلے وزیر اعظم کون تھے؟", "لیاقت علی خان پاکستان کے پہلے وزیر اعظم تھے۔"],
+        ["آئین 1973ء کب نافذ ہوا؟", "آئین پاکستان 1973ء 14 اگست 1973ء کو نافذ ہوا۔"],
+        ["پاکستان کا قومی جانور کون سا ہے؟", "مارخور پاکستان کا قومی جانور ہے۔"],
+        ["پاکستان کا قومی پھول کون سا ہے؟", "چنبیلی پاکستان کا قومی پھول ہے۔"],
+        ["یوم پاکستان کب منایا جاتا ہے؟", "یوم پاکستان 23 مارچ کو منایا جاتا ہے۔"],
+        ["یوم آزادی کب منایا جاتا ہے؟", "یوم آزادی 14 اگست کو منایا جاتا ہے۔"],
+        ["پاکستان کی نظریاتی بنیاد کیا ہے؟", "پاکستان کی نظریاتی بنیاد برصغیر کے مسلمانوں کے جداگانہ قومی تشخص اور اسلامی اصولوں سے متعلق ہے۔"],
+        ["وفاق سے کیا مراد ہے؟", "وفاق ایسا نظام ہے جس میں اختیارات مرکزی اور صوبائی حکومتوں کے درمیان تقسیم ہوتے ہیں۔"],
+        ["معاشی ترقی کیا ہے؟", "معاشی ترقی سے مراد پیداوار، آمدنی، روزگار اور معیارِ زندگی میں بہتری ہے۔"]
+    ]
+};
+
+function getShortQuestionBank(subject) {
+    return shortQuestionBanks[subject] || shortQuestionBanks["English"];
+}
+
+function getChapterShortQuestions(subject, chapterIndex) {
+    const bank = getShortQuestionBank(subject);
+    const count = Math.min(20, bank.length);
+    const start = (chapterIndex * count) % bank.length;
+    const questions = [];
+
+    for (let i = 0; i < count; i++) {
+        questions.push(bank[(start + i) % bank.length]);
+    }
+
+    return questions;
+}
+
+let shortClass = 9;
+let shortSubject = "Physics";
+let shortChapter = 0;
+
+function openShortQuestions() {
+    document.getElementById("class9").style.display = "none";
+    document.getElementById("class10").style.display = "none";
+    document.querySelector(".class-buttons").style.display = "none";
+    document.querySelector(".test-nav").style.display = "none";
+    document.querySelector(".short-nav").style.display = "none";
+    document.getElementById("chapterTests").style.display = "none";
+    document.querySelectorAll(".section-title").forEach(e => e.style.display = "none");
+    document.getElementById("shortQuestions").style.display = "block";
+
+    renderShortNavigation();
+    renderShortQuestions();
+    window.scrollTo({top:0, behavior:"smooth"});
+}
+
+function renderShortNavigation() {
+    const classBox = document.getElementById("shortClassTabs");
+    const subjectBox = document.getElementById("shortSubjectTabs");
+    const chapterBox = document.getElementById("shortChapterTabs");
+
+    classBox.innerHTML = "";
+    [9,10].forEach(c => {
+        const b = document.createElement("button");
+        b.className = "test-tab" + (c === shortClass ? " active" : "");
+        b.textContent = c + "th Class";
+        b.onclick = () => {
+            shortClass = c;
+            shortSubject = Object.keys(chapterNames[c])[0];
+            shortChapter = 0;
+            renderShortNavigation();
+            renderShortQuestions();
+        };
+        classBox.appendChild(b);
+    });
+
+    subjectBox.innerHTML = "";
+    Object.keys(chapterNames[shortClass]).forEach(s => {
+        const b = document.createElement("button");
+        b.className = "test-tab" + (s === shortSubject ? " active" : "");
+        b.textContent = s;
+        b.onclick = () => {
+            shortSubject = s;
+            shortChapter = 0;
+            renderShortNavigation();
+            renderShortQuestions();
+        };
+        subjectBox.appendChild(b);
+    });
+
+    chapterBox.innerHTML = "";
+    chapterNames[shortClass][shortSubject].forEach((name, i) => {
+        const b = document.createElement("button");
+        b.className = "test-tab" + (i === shortChapter ? " active" : "");
+        b.textContent = "Ch " + (i + 1) + ": " + name;
+        b.onclick = () => {
+            shortChapter = i;
+            renderShortNavigation();
+            renderShortQuestions();
+        };
+        chapterBox.appendChild(b);
+    });
+}
+
+function renderShortQuestions() {
+    const questions = getChapterShortQuestions(shortSubject, shortChapter);
+
+    document.getElementById("shortBreadcrumb").textContent =
+        shortClass + "th Class → " + shortSubject + " → Chapter " +
+        (shortChapter + 1) + ": " +
+        chapterNames[shortClass][shortSubject][shortChapter];
+
+    const list = document.getElementById("shortList");
+    list.innerHTML = "";
+
+    questions.forEach((item, index) => {
+        const card = document.createElement("div");
+        card.className = "short-card";
+
+        const question = document.createElement("div");
+        question.className = "short-question";
+        question.textContent = (index + 1) + ". " + item[0];
+
+        const answerButton = document.createElement("button");
+        answerButton.className = "show-answer";
+        answerButton.textContent = "Show Answer";
+
+        const answer = document.createElement("div");
+        answer.className = "short-answer";
+        answer.textContent = "Answer: " + item[1];
+
+        answerButton.onclick = () => {
+            answer.classList.toggle("show");
+            answerButton.textContent =
+                answer.classList.contains("show") ? "Hide Answer" : "Show Answer";
+        };
+
+        card.appendChild(question);
+        card.appendChild(answerButton);
+        card.appendChild(answer);
+        list.appendChild(card);
+    });
+}
+
+/* =========================
+   BACK TO HOME
+========================= */
+function backToHome() {
+    document.getElementById("chapterTests").style.display = "none";
+    document.getElementById("shortQuestions").style.display = "none";
+    document.querySelector(".class-buttons").style.display = "flex";
+    document.querySelector(".test-nav").style.display = "block";
+    document.querySelector(".short-nav").style.display = "block";
+    document.querySelectorAll(".section-title").forEach(e => e.style.display = "block");
+    document.getElementById("noResult").style.display = "none";
+    document.getElementById("search").value = "";
+
+    // Show the currently selected class and reset the book search.
+    showClass(currentClass || 9);
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+/* Return to the main book area when the class buttons are used. */
+const oldShowClassForShortQuestions = showClass;
+showClass = function(classNumber) {
+    document.getElementById("shortQuestions").style.display = "none";
+    document.querySelector(".short-nav").style.display = "block";
+    oldShowClassForShortQuestions(classNumber);
+};
+
+/* Keep Chapter Tests working while Short Questions is open. */
+const oldOpenChapterTests = openChapterTests;
+openChapterTests = function() {
+    document.getElementById("shortQuestions").style.display = "none";
+    document.querySelector(".short-nav").style.display = "block";
+    oldOpenChapterTests();
+};
+
+</script>
+
+
+</body>
+
+</html>
