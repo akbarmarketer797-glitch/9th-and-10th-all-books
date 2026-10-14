@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th Class Islamiyat</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .top-bar {
+            background: linear-gradient(135deg, #0066ff, #00bfff);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .back-button {
+            background: white;
+            color: #0066ff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background: #eaf4ff;
+        }
+
+        h1 {
+            color: white;
+            margin: 10px 0;
+        }
+
+        .pdf-viewer {
+            display: block;
+            width: 100%;
+            height: calc(100vh - 100px);
+            border: none;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .pdf-viewer {
+                height: calc(100vh - 110px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <button type="button" class="back-button"
+                onclick="goBackToBooksHome()">
+            🏠 Back to Home
+        </button>
+
+        <h1>9th Class Islamiyat</h1>
+    </div>
+
+    <iframe
+        class="pdf-viewer"
+        src="islam.pdf"
+        title="9th Class Islamiyat PDF">
+    </iframe>
+
+    <script>
+        function goBackToBooksHome() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                alert("Please open this book from your main Books page.");
+            }
+        }
+    </script>
+
+</body>
+</html>

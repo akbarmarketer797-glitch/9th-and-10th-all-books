@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th Class Math</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .top-bar {
+            background: linear-gradient(135deg, #0066ff, #00bfff);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: white;
+            color: #0066ff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background: #eaf4ff;
+        }
+
+        h1 {
+            color: white;
+            margin: 10px 0;
+        }
+
+        .pdf-viewer {
+            display: block;
+            width: 100%;
+            height: calc(100vh - 100px);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+
+        <!-- BACK TO THE PREVIOUS PAGE -->
+        <button
+            type="button"
+            class="back-button"
+            onclick="goBackToBooksHome()">
+            ← Back to Home
+        </button>
+
+        <h1>9th Class Math</h1>
+
+    </div>
+
+    <!-- PDF VIEWER -->
+    <iframe
+        class="pdf-viewer"
+        src="math.pdf"
+        title="9th Class Math Book PDF">
+    </iframe>
+
+    <script>
+        function goBackToBooksHome() {
+            if (window.history.length > 1) {
+                // Return to the page where Open Book was clicked.
+                window.history.back();
+            } else {
+                // Do not redirect to a possibly incorrect filename.
+                alert(
+                    "Please open this book from your main Books page. " +
+                    "The main page is not available in browser history."
+                );
+            }
+        }
+    </script>
+
+</body>
+</html>
